@@ -1,0 +1,7 @@
+﻿Date	Time	Severity	PID	TID	Function	Message
+22-02-2025	11:27:40.017	 INFO	 56764	 67520	DllMain	"DLL_PROCESS_ATTACH Tue Oct 15 22:00:42 2024 11.3.2416.32"
+22-02-2025	11:27:40.020	 INFO	 56764	 54476	LateInitialization	"Intialization..."
+22-02-2025	11:27:40.023	 INFO	 56764	 54476	LateInitialization	"Exe = C:\Users\Shivam Soni\AppData\Local\Programs\Git\usr\bin\vim.exe"
+22-02-2025	11:27:40.024	 INFO	 56764	 54476	LateInitialization	"IsExplorer = 0"
+22-02-2025	11:27:40.025	 INFO	 56764	 54476	Edlp::Path::InitializeExcludedPathPatterns	"Windows drive = C:"
+22-02-2025	11:27:40.030	 INFO	 56764	 54476	LateInitialization	"Intialization finished"
