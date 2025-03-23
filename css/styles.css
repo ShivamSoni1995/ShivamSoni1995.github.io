@@ -10970,3 +10970,33 @@ section.resume-section .resume-section-content {
     padding-bottom: 5rem;
   }
 }
+.custom-link {
+  color: #bd5d38; /* Standard link color */
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+  display: inline-block;
+}
+
+.custom-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 100%;
+  height: 2px;
+  background-color: #bd5d38;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.3s ease-in-out;
+}
+
+.custom-link:hover {
+  color: #bd5d38; /* Darker blue on hover */
+  transform: scale(1.05);
+}
+
+.custom-link:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
