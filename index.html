@@ -131,24 +131,44 @@
                     </div>
                     <hr>
             <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h2 class="mb-0"><a href="https://github.com/ShivamSoni1995/Deploying-Wordpress-App-on-Amazon-ECS.git" target="_blank" class="custom-link>4. Deploying Scalable WordPress on AWS ECS Fargate</a></h2>
-        <br>
-        <p><strong>Overview:</strong> Developed and documented a deployment strategy for a scalable and highly available WordPress application on AWS using Elastic Container Service (ECS) with the Fargate launch type. This approach leverages managed AWS services for compute, load balancing, database management, and networking within a secure VPC, following containerization best practices for simplified management via serverless infrastructure. Application access is handled via the Application Load Balancer DNS, with options for custom domain mapping.</p>
+                        
+                        <div class="project-item flex-grow-1"> <h2 class="mb-0">
+        <a href="https://github.com/ShivamSoni1995/Deploying-Wordpress-App-on-Amazon-ECS.git" target="_blank" class="custom-link">
+            4. Deploying Scalable WordPress on AWS ECS Fargate
+        </a>
+    </h2>
 
-        <h3>Key Features & Architecture:</h3>
-        <ul>
-            <li>Utilized <strong>AWS ECS (Fargate)</strong> to run WordPress containers without the need to provision or manage underlying EC2 server instances.</li>
-            <li>Implemented an <strong>Application Load Balancer (ALB)</strong> to efficiently distribute incoming web traffic across multiple WordPress container tasks, enhancing availability and performance.</li>
-            <li>Leveraged <strong>Amazon RDS (MySQL)</strong> to provide a fully managed, scalable, and reliable relational database backend for WordPress.</li>
-            <li>Designed the deployment within a secure <strong>Amazon VPC</strong> for network isolation.</li>
-            <li>(Optional) Integrated <strong>AWS Secrets Manager</strong> for securely storing and managing sensitive database credentials, enhancing security posture.</li>
-            <li>Defined ECS Task Definitions and Services to manage container deployment, scaling, and networking configurations.</li>
-        </ul>
+    <p><strong>Overview:</strong></p> <p>
+        Designed and documented a robust deployment strategy for a scalable and highly available WordPress application on AWS using Elastic Container Service (ECS) with the Fargate launch type. This serverless approach utilizes managed AWS services for compute, load balancing, database, and networking within a secure VPC, simplifying container management. Access is provided via the Application Load Balancer's DNS, with options for custom domain mapping.
+    </p>
 
-        <p><strong>Technologies Used:</strong> <span class="technologies">AWS Elastic Container Service (ECS - Fargate), AWS Application Load Balancer (ALB), Amazon RDS (MySQL), Amazon VPC, AWS IAM, (Optional: AWS Secrets Manager, AWS Route 53).</span></p>
-                        </div>
-            </div>
+    <h3>Key Features & Architecture:</h3>
+    <ul>
+        <li>
+            Utilized <strong>AWS ECS (Fargate)</strong> to run WordPress containers without managing underlying server infrastructure.
+        </li>
+        <li>
+            Implemented an <strong>Application Load Balancer (ALB)</strong> for efficient traffic distribution across WordPress tasks, enhancing availability and performance.
+        </li>
+        <li>
+            Leveraged <strong>Amazon RDS (MySQL)</strong> for a managed, scalable, and reliable relational database backend.
+        </li>
+        <li>
+            Deployed within a secure <strong>Amazon VPC</strong> for network isolation and control.
+        </li>
+        <li>
+            Defined <strong>ECS Task Definitions and Services</strong> to manage container deployment, scaling, health checks, and networking.
+        </li>
+         <li>
+            (Optional) Integrated <strong>AWS Secrets Manager</strong> for secure handling of sensitive credentials like database passwords.
+        </li>
+    </ul>
+
+    <p>
+        <strong>Technologies Used:</strong>
+        <span class="technologies">AWS ECS (Fargate), Application Load Balancer (ALB), Amazon RDS (MySQL), Amazon VPC, AWS IAM, (Optional: AWS Secrets Manager, AWS Route 53).</span>
+    </p>
+</div>
                   
             
             </section>
