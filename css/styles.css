@@ -11000,3 +11000,52 @@ section.resume-section .resume-section-content {
   transform: scaleX(1);
   transform-origin: left;
 }
+.custom-link {
+  position: relative; /* Establishes a positioning context for child elements */
+  display: inline-block; /* Allows setting height and respects margins/padding properly */
+  text-decoration: none;
+  color: #bd5d38; /* Default Bootstrap link color, adjust as needed */
+  line-height: 1.4; /* Adjust for proper vertical alignment if text wraps */
+  min-height: 1.4em; /* Ensures link doesn't collapse, matches line-height */
+  vertical-align: middle; /* Aligns link nicely with surrounding text if any */
+}
+
+.custom-link .link-text-wrapper,
+.custom-link .link-icon-wrapper {
+  display: flex; /* Using flex to help center content if needed */
+  align-items: center; /* Vertically align content within the wrapper */
+  transition: opacity 0.3s ease-in-out; /* Smooth transition for opacity */
+}
+
+.custom-link .link-text-wrapper {
+  opacity: 1; /* Text is fully visible by default */
+}
+
+.custom-link .link-icon-wrapper {
+  opacity: 0; /* Icon is hidden by default */
+  position: absolute; /* Position the icon on top of the text area */
+  top: 0;
+  left: 0;
+  width: 100%; /* Make icon wrapper take full width of the link */
+  height: 100%; /* Make icon wrapper take full height of the link */
+  justify-content: flex-start; /* Aligns icon to the start (left) */
+  /* If you want the icon centered in the link area, use: justify-content: center; */
+}
+
+.custom-link .link-icon-wrapper .fa-github {
+  font-size: 1.5em; /* Adjust icon size as needed. e.g., 1.2em, 1.5em, 2em */
+  color: #333; /* GitHub icon color, adjust as needed */
+}
+
+.custom-link:hover .link-text-wrapper {
+  opacity: 0; /* Text fades out completely on hover */
+}
+
+.custom-link:hover .link-icon-wrapper {
+  opacity: 1; /* Icon becomes fully visible on hover */
+}
+
+/* Ensure your h2 doesn't add extra margin if mb-0 is from Bootstrap */
+.mb-0 {
+  margin-bottom: 0 !important; /* If using Bootstrap or similar */
+}
